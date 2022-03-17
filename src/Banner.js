@@ -43,10 +43,10 @@ function Banner({ bannerFilm }) {
 							<div className="description">{bannerFilm.description}</div>
 						</div>
 						<div className="extraInfo">
-							<div>People</div>
-							<div>Locations</div>
-							<div>Species</div>
-							<div>Vehicles</div>
+							<div>People:</div>
+							<div>Locations:</div>
+							<div>Species:</div>
+							<div>Vehicles:</div>
 						</div>
 					</div>
 				</div>

@@ -1,29 +1,30 @@
 .Banner {
-	/* padding: 1rem; */
-	height: 60vh;
+	height: 60%;
 	min-height: 400px;
 }
 
 .bannerCanvas {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.666);
-	padding-top: 80px;
+	padding-top: 4rem;
 }
 
 .bannerContent {
 	color: white;
 	height: 100%;
-	padding: 1rem;
+	padding: 1.3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	display: flex;
 	flex-direction: row;
 }
 
 .movieInfo {
-	flex: 3;
+	flex: 1;
 }
 
 .extraInfo {
-	flex: 2;
+	flex: 1;
 }
 
 .movieInfo {
@@ -33,12 +34,13 @@
 }
 
 .movieInfo {
-	padding-right: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 1rem;
 	border-right: 0.5px solid rgb(255, 255, 255);
 }
 
 .extraInfo {
-	padding-left: 0.5rem;
+	padding-left: 1rem;
 }
 
 .ogTitle span {
@@ -58,6 +60,7 @@
 	font-weight: 600;
 	line-height: 1.6em;
 	overflow-y: scroll;
+	max-width: 46ch;
 }
 
 /* .bannerContent > * {
