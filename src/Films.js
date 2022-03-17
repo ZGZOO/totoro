@@ -1,45 +1,56 @@
 import React, { useState, useEffect } from "react";
-import FilmCard from "./FilmCard";
+import "./Films.css";
+import Banner from "./Banner";
+import FilmsDeck from "./FilmsDeck";
+import loadingGif from "./asset/loading.gif";
 
 function Films() {
 	const [listOfFilms, setListOfFilms] = useState([]);
-	const [listOfFilmUrls, setListOfFilmUrls] = useState([]);
+	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState();
+	const [bannerFilm, setBannerFilm] = useState({});
 
-	const getAllFilms = () => {
-		fetch("https://ghibliapi.herokuapp.com/films?limit=3")
-			.then((res) => res.json())
-			.then((data) => {
-				setListOfFilms(data);
-			});
-	};
-
-	const setUrlsArr = () => {
-		listOfFilms.map((filmItem) =>
-			setListOfFilmUrls((listOfFilmUrls) => [...listOfFilmUrls, filmItem.url])
-		);
+	const getAllFilms = async () => {
+		try {
+			setLoading(true);
+			let res = await fetch("https://ghibliapi.herokuapp.com/films");
+			let rawFilms = await res.json(); //[{},{},{}]
+			setListOfFilms(rawFilms);
+			setBannerFilm(rawFilms[0]);
+			setTimeout(() => {
+				setLoading(false);
+			}, 788);
+		} catch (err) {
+			setError(err);
+		}
 	};
 
 	useEffect(() => {
 		getAllFilms();
 	}, []);
 
-	useEffect(() => {
-		setUrlsArr();
-	}, [listOfFilms]);
+	if (loading) {
+		return (
+			<>
+				<div className="loadingDiv">
+					{/* <div className="loadingWrapper"> */}
+					<p>Loading films...</p>
+					<img src={loadingGif} />
+					{/* </div> */}
+				</div>
+			</>
+		);
+	}
 
-	let displayFilms = listOfFilms ? (
-		listOfFilms.map((film) => {
-			return <div>{film.title}</div>;
-		})
-	) : (
-		<h1>loading...</h1>
-	);
+	if (error || !Array.isArray(listOfFilms)) {
+		return <p>There was an error loading the data!</p>;
+	}
 
 	return (
 		<>
-			<div>
-				{displayFilms}
-				<FilmCard filmUrls={listOfFilmUrls} />
+			<div className="Films">
+				<Banner bannerFilm={bannerFilm} />
+				<FilmsDeck films={listOfFilms} setBannerFilm={setBannerFilm} />
 			</div>
 		</>
 	);

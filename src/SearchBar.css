@@ -1,0 +1,14 @@
+.searchTab {
+	border: none;
+	background-color: transparent;
+	font-family: inherit;
+	padding: 0;
+	cursor: pointer;
+	height: 100;
+	width: auto;
+}
+
+.searchTab img {
+	height: 25px;
+	width: auto;
+}

@@ -1,0 +1,39 @@
+.Navbar {
+	position: fixed;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* box-shadow: 0px 1px 10px #999; */
+}
+
+.navWrap {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem;
+	padding-left: 2rem;
+	background-color: transparent;
+}
+
+.primaryNav {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.secondaryNav {
+	display: flex;
+	margin-left: auto;
+}
+
+.navTab a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+	opacity: 1;
+	transition: 0.3s;
+	/* padding: 1em; */
+}
+
+.navTab a:hover {
+	opacity: 0.7;
+}

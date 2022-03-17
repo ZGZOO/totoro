@@ -1,0 +1,21 @@
+.FilmsDeck {
+	padding: 1rem;
+}
+
+.deckWrapper {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	gap: 0.5rem;
+	overflow-x: auto;
+}
+
+.deckWrapper::-webkit-scrollbar {
+	height: 12.5px;
+}
+
+.deckWrapper::-webkit-scrollbar-thumb {
+	background-color: rgb(109, 109, 109); /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
+	border: 5px solid white;
+}

@@ -1,0 +1,17 @@
+/* .FilmCard img {
+	width: 200px;
+} */
+
+.FilmCard {
+	border-radius: 100px;
+}
+
+.filmImg {
+	height: 100%;
+}
+
+.filmImg img {
+	display: block;
+	width: 200px;
+	border-radius: 8px;
+}
