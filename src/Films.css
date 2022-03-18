@@ -1,5 +1,5 @@
 .Films {
-	height: 100vh;
+	height: 100%;
 }
 
 .loadingDiv {
@@ -9,3 +9,41 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.loader {
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.loader {
+		border: 3px solid #f3f3f3; /* Light grey */
+		border-top: 3px solid #59a9df; /* Blue */
+		width: 42px;
+		height: 42px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.loader {
+		border: 4px solid #f3f3f3; /* Light grey */
+		border-top: 4px solid #59a9df; /* Blue */
+		width: 52px;
+		height: 52px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */

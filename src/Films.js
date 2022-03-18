@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Films.css";
 import Banner from "./Banner";
 import FilmsDeck from "./FilmsDeck";
-import loadingGif from "./asset/loading.gif";
 
 function Films() {
 	const [listOfFilms, setListOfFilms] = useState([]);
@@ -17,9 +16,7 @@ function Films() {
 			let rawFilms = await res.json(); //[{},{},{}]
 			setListOfFilms(rawFilms);
 			setBannerFilm(rawFilms[0]);
-			setTimeout(() => {
-				setLoading(false);
-			}, 788);
+			setLoading(false);
 		} catch (err) {
 			setError(err);
 		}
@@ -29,14 +26,11 @@ function Films() {
 		getAllFilms();
 	}, []);
 
-	if (loading) {
+	while (loading) {
 		return (
 			<>
 				<div className="loadingDiv">
-					{/* <div className="loadingWrapper"> */}
-					<p>Loading films...</p>
-					<img src={loadingGif} />
-					{/* </div> */}
+					<div className="loader"></div>
 				</div>
 			</>
 		);
