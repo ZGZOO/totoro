@@ -43,9 +43,19 @@ function People() {
 				return (
 					<div className={`PeopleCard`} key={`PeopleCard-${people.name}`}>
 						<div className="peopleCardWrapper">
-							<div>Name: {people.name}</div>
-							<div>Gender: {people.gender}</div>
-							<div>Age: {people.age}</div>
+							<div>
+								Name: <span>{people.name}</span>
+							</div>
+							<div>
+								Gender:{" "}
+								<span>{people.gender == "NA" ? "N/A" : people.gender}</span>
+							</div>
+							<div>
+								Age:{" "}
+								<span>
+									{!people.age || people.age == "NA" ? "N/A" : people.age}
+								</span>
+							</div>
 						</div>
 					</div>
 				);
