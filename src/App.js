@@ -17,12 +17,13 @@ function App() {
 			<Navbar />
 
 			<Routes>
-				{/* <Route path="/" element={<Films />} /> */}
-				<Route path="films" element={<Films />} />
-				<Route path="people" element={<People />} />
-				<Route path="locations" element={<Locations />} />
-				<Route path="species" element={<Species />} />
-				<Route path="vehicles" element={<Vehicles />} />
+				<Route path="/" element={<Films />}>
+					<Route path="films" element={<Films />} />
+					<Route path="people" element={<People />} />
+					<Route path="locations" element={<Locations />} />
+					<Route path="species" element={<Species />} />
+					<Route path="vehicles" element={<Vehicles />} />
+				</Route>
 			</Routes>
 		</div>
 	);
