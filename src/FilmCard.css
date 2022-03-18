@@ -16,12 +16,12 @@
 }
 
 .filmImg img:hover {
-	box-shadow: 0 0 5px #ddd;
+	box-shadow: 0 0 8px rgb(130, 130, 130);
 }
 
 .activeCard {
 	border-radius: 8px;
-	box-shadow: 0 0 8px rgb(73, 131, 255), 0 0 8px #ddd;
+	box-shadow: 0 0 8px rgb(130, 130, 130), 0 0 8px #ddd;
 }
 
 /* Extra small devices (phones, 600px and down) */

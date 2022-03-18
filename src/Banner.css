@@ -62,7 +62,7 @@
 		margin-left: 1.5rem;
 		margin-right: 1.5rem;
 		gap: 0.7rem;
-		border-bottom: 0.5px solid rgb(255, 255, 255);
+		/* border-bottom: 0.5px solid rgb(255, 255, 255); */
 	}
 
 	.extraInfo {
@@ -117,7 +117,9 @@
 	}
 
 	.bannerContent {
-		padding: 1.3rem;
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 3rem;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 		flex-direction: row;
@@ -125,10 +127,10 @@
 	}
 
 	.movieInfo {
-		padding-left: 2rem;
+		/* padding-left: 2rem; */
 		gap: 1rem;
-		border-right: 0.5px solid rgb(255, 255, 255);
-		padding-right: 1rem;
+		/* border-right: 0.5px solid rgb(255, 255, 255); */
+		/* padding-right: 1rem; */
 	}
 
 	.extraInfo {
@@ -170,9 +172,9 @@
 	}
 
 	.movieInfo {
-		padding-left: 1rem;
+		/* padding-left: 1rem; */
 		gap: 1rem;
-		border-right: 0.5px solid rgb(255, 255, 255);
+		/* border-right: 0.5px solid rgb(255, 255, 255); */
 	}
 
 	.engTitle {

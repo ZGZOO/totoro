@@ -61,9 +61,7 @@ function Navbar() {
 					</Link>
 					{primaryNav}
 					<div className="secondaryNav">
-						<div className="nav-element">
-							<SearchBar />
-						</div>
+						<div className="nav-element">{/* <SearchBar /> */}</div>
 						{/* <div className="nav-element">
 							<AccountMenu />
 						</div> */}

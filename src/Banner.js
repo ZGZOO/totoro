@@ -10,6 +10,22 @@ function Banner({ bannerFilm }) {
 		return hours + "h " + minutes + "m";
 	};
 
+	// const getPeople = async (api) => {
+	// 	let res = await fetch(api);
+	// 	let rawPeople = await res.json(); //[{},{},{}]
+	// 	return rawPeople;
+	// };
+
+	// const showPeopleInFilm = (peopleApis) => {
+	// 	peopleApis.map((api) => {
+	// 		return (
+	// 			<>
+	// 				<div>{getPeople(api).name}</div>
+	// 			</>
+	// 		);
+	// 	});
+	// };
+
 	return (
 		<>
 			<div
@@ -42,12 +58,12 @@ function Banner({ bannerFilm }) {
 
 							<div className="description">{bannerFilm.description}</div>
 						</div>
-						<div className="extraInfo">
-							<div>People:</div>
-							<div>Locations:</div>
+						{/* <div className="extraInfo"> */}
+						{/* <div>People:{showPeopleInFilm(bannerFilm.people)}</div> */}
+						{/* <div>Locations:</div>
 							<div>Species:</div>
-							<div>Vehicles:</div>
-						</div>
+							<div>Vehicles:</div> */}
+						{/* </div> */}
 					</div>
 				</div>
 			</div>
