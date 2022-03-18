@@ -1,7 +1,3 @@
-.FilmsDeck {
-	height: 40%;
-}
-
 .deckWrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -22,15 +18,17 @@
 
 @media only screen and (max-width: 600px) {
 	.FilmsDeck {
+		height: 40%;
 		padding: 0.5rem;
 		padding-left: 0;
 		padding-right: 0;
+		padding-bottom: 1.2rem;
 	}
 
 	.deckWrapper {
 		height: 86%;
 		gap: 0.5rem;
-		padding: 0.5rem;
+		padding: 0.2rem;
 		padding-top: 0;
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;
@@ -39,6 +37,7 @@
 
 @media only screen and (min-width: 601px) {
 	.FilmsDeck {
+		height: 40%;
 		padding: 1rem;
 		padding-left: 0;
 		padding-right: 0;
