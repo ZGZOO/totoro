@@ -36,7 +36,7 @@
 @media only screen and (max-width: 600px) {
 	.Banner {
 		height: 60%;
-		min-height: 300px;
+		min-height: 250px;
 	}
 
 	.bannerCanvas {

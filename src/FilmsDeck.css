@@ -1,8 +1,10 @@
 .FilmsDeck {
+	height: 40%;
 	padding: 1rem;
 }
 
 .deckWrapper {
+	height: 86%;
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -18,4 +20,10 @@
 	background-color: rgb(109, 109, 109); /* color of the scroll thumb */
 	border-radius: 20px; /* roundness of the scroll thumb */
 	border: 5px solid white;
+}
+
+@media only screen and (min-width: 601px) {
+	.deckWrapper {
+		height: 100%;
+	}
 }
