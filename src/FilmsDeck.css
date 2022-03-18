@@ -3,7 +3,6 @@
 	margin: 0 auto;
 	display: flex;
 	overflow-x: scroll;
-	scroll-padding-left: 0;
 }
 
 .deckWrapper::-webkit-scrollbar {
@@ -28,9 +27,17 @@
 	.deckWrapper {
 		height: 86%;
 		gap: 0.5rem;
-		padding: 0.2rem;
 		padding-top: 0;
+		padding-bottom: 0.2rem;
+		/* padding-left: 0.5rem; */
+		/* padding-right: 0.5rem; */
+	}
+
+	.FilmCard:first-child {
 		padding-left: 0.5rem;
+	}
+
+	.FilmCard:last-child {
 		padding-right: 0.5rem;
 	}
 }
@@ -46,9 +53,15 @@
 	.deckWrapper {
 		height: 100%;
 		gap: 0.8rem;
-		padding: 0.5rem;
 		padding-top: 0;
+		padding-bottom: 0.5rem;
+	}
+
+	.FilmCard:first-child {
 		padding-left: 1rem;
+	}
+
+	.FilmCard:last-child {
 		padding-right: 1rem;
 	}
 }
