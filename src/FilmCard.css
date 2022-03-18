@@ -16,12 +16,12 @@
 }
 
 .filmImg img:hover {
-	outline: 2px solid rgb(160, 160, 160);
+	box-shadow: 0 0 5px #ddd;
 }
 
 .activeCard {
 	border-radius: 8px;
-	outline: 3px solid rgb(160, 160, 160);
+	box-shadow: 0 0 8px rgb(73, 131, 255), 0 0 8px #ddd;
 }
 
 /* Extra small devices (phones, 600px and down) */
