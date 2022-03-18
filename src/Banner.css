@@ -1,26 +1,10 @@
-.Banner {
-	height: 60%;
-	min-height: 400px;
-}
-
 .bannerCanvas {
 	height: 100%;
-	background: rgb(255, 255, 255);
-	background: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(0, 0, 0, 0.5) 30%,
-		rgba(0, 0, 0, 1) 100%
-	);
-	padding-top: 4rem;
 }
 
 .bannerContent {
-	color: white;
+	color: #f4f4f4;
 	height: 100%;
-	padding: 1.3rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
 	display: flex;
 	flex-direction: row;
 }
@@ -40,7 +24,6 @@
 }
 
 .movieInfo {
-	padding-left: 2rem;
 	padding-right: 1rem;
 	border-right: 0.5px solid rgb(255, 255, 255);
 }
@@ -49,30 +32,171 @@
 	padding-left: 1rem;
 }
 
-.ogTitle span {
-	font-size: 16px;
-	font-weight: lighter;
-}
-
 .timeAndScore {
 	display: flex;
 	gap: 1rem;
-	font-size: 14px;
 	font-weight: bold;
 }
 
 .description {
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 1.6em;
 	overflow-y: scroll;
-	max-width: 46ch;
 }
 
-/* .bannerContent > * {
-	border: 1px solid pink;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.Banner {
+		height: 60%;
+		min-height: 300px;
+	}
+
+	.bannerCanvas {
+		padding-top: 1.3rem;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(0, 0, 0, 0.5) 15%,
+			rgba(0, 0, 0, 1) 100%
+		);
+	}
+
+	.bannerContent {
+		padding-top: 2rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.movieInfo {
+		padding-left: 1.5rem;
+		gap: 0.7rem;
+	}
+
+	.engTitle {
+		font-size: 20px;
+	}
+
+	.ogTitle {
+		font-size: 12px;
+	}
+
+	.ogTitle span {
+		font-size: 12px;
+		font-weight: lighter;
+	}
+
+	.director {
+		font-size: 12px;
+	}
+
+	.timeAndScore {
+		font-size: 12px;
+	}
+
+	.description {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.6em;
+		max-width: 46ch;
+	}
 }
 
-.movieInfo > * {
-	border: 1px solid red;
-} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+	.Banner {
+		height: 60%;
+		min-height: 400px;
+	}
+
+	.bannerCanvas {
+		padding-top: 4rem;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(0, 0, 0, 0.5) 30%,
+			rgba(0, 0, 0, 1) 100%
+		);
+	}
+
+	.bannerContent {
+		padding: 1.3rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.movieInfo {
+		padding-left: 2rem;
+		gap: 1rem;
+	}
+
+	.ogTitle span {
+		font-size: 16px;
+		font-weight: lighter;
+	}
+
+	.timeAndScore {
+		font-size: 14px;
+	}
+
+	.description {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.6em;
+		max-width: 46ch;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+	.bannerCanvas {
+		padding-top: 2.8rem;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(0, 0, 0, 0.5) 25%,
+			rgba(0, 0, 0, 1) 100%
+		);
+	}
+
+	.bannerContent {
+		padding: 1.3rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.movieInfo {
+		padding-left: 1rem;
+		gap: 1rem;
+	}
+
+	.engTitle {
+		font-size: 26px;
+	}
+
+	.ogTitle {
+		font-size: 14px;
+	}
+
+	.ogTitle span {
+		font-size: 14px;
+		font-weight: lighter;
+	}
+
+	.director {
+		font-size: 14px;
+	}
+
+	.timeAndScore {
+		font-size: 14px;
+	}
+
+	.description {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.6em;
+		max-width: 46ch;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

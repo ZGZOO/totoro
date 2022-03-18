@@ -24,7 +24,7 @@ function Banner({ bannerFilm }) {
 				<div className="bannerCanvas">
 					<div className="bannerContent">
 						<div className="movieInfo">
-							<h1>{bannerFilm.title}</h1>
+							<h1 className="engTitle">{bannerFilm.title}</h1>
 							<h3 className="ogTitle">
 								{bannerFilm.original_title}{" "}
 								<span>({bannerFilm.original_title_romanised})</span>
