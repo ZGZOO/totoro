@@ -2,10 +2,11 @@ import React from "react";
 import AddFav from "./AddFav";
 import "./FilmCard.css";
 
-function FilmCard({ films, setBannerFilm }) {
+function FilmCard({ films, setBannerFilm, activeFilmCard, setActiveFilmCard }) {
 	function handleClick(filmObj) {
 		console.log("onclick, ", filmObj);
 		setBannerFilm(filmObj);
+		setActiveFilmCard(filmObj.title);
 	}
 
 	let displayFilmCards = films ? (
@@ -16,7 +17,11 @@ function FilmCard({ films, setBannerFilm }) {
 					key={`FilmCard-${film.title}`}
 					onClick={() => handleClick(film)}
 				>
-					<div className="filmImg">
+					<div
+						className={`filmImg ${
+							activeFilmCard === film.title ? "activeCard" : ""
+						}`}
+					>
 						<img src={film.image} />
 					</div>
 				</div>
