@@ -1,8 +1,7 @@
 .Navbar {
 	position: fixed;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
-	/* box-shadow: 0px 1px 10px #999; */
+	/* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .navWrap {
@@ -18,7 +17,11 @@
 	list-style-type: none;
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	gap: 2em;
+}
+
+.primaryNav .navTab a {
+	text-decoration: none;
 }
 
 .secondaryNav {
@@ -26,14 +29,109 @@
 	margin-left: auto;
 }
 
-.navTab a {
-	text-decoration: none;
-	color: rgba(0, 0, 0, 0.8);
-	opacity: 1;
-	transition: 0.3s;
-	/* padding: 1em; */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.Navbar {
+		background-color: transparent;
+	}
+
+	.navWrap {
+		padding: 0.5rem;
+		padding-left: 1rem;
+	}
+
+	#logo {
+		width: 70px;
+		height: auto;
+	}
+
+	.primaryNav {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		padding: 0.5rem;
+		background-color: white;
+		width: 100%;
+	}
+
+	.primaryNav > * {
+		flex: 1;
+	}
+
+	.normalNavTab,
+	.activeNavTab {
+		display: flex;
+		gap: 0.4em;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+		padding: 0.3em;
+	}
+
+	.normalNavTab:hover,
+	.activeNavTab {
+		background: #ebf5ff;
+		box-shadow: 0 2px 4px rgba(0, 90, 156, 0.15);
+	}
+
+	.normalNavTab {
+		color: rgba(0, 0, 0, 0.6);
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.activeNavTab {
+		color: black;
+		border: 1px solid rgba(119, 136, 153, 0.55);
+		cursor: not-allowed;
+	}
+
+	#filmsSvg {
+		width: 16px;
+	}
+
+	#characterSvg {
+		width: 19px;
+	}
 }
 
-.navTab a:hover {
-	opacity: 0.7;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#logo {
+		width: 100px;
+		height: auto;
+	}
+
+	#filmsSvg,
+	#characterSvg {
+		display: none;
+	}
+
+	.primaryNav {
+		padding: 0.5em;
+		padding-left: 2em;
+	}
+
+	.primaryNav .navTab a {
+		font-size: 17px;
+		padding-bottom: 0.2em;
+	}
+
+	.normalNavTab {
+		color: rgba(0, 0, 0, 0.6);
+	}
+
+	.normalNavTab:hover {
+		color: rgba(0, 0, 0, 0.8);
+	}
+
+	.activeNavTab {
+		color: black;
+		cursor: not-allowed;
+		border-bottom: 0.9px solid black;
+	}
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
