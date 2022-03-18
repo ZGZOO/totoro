@@ -21,7 +21,7 @@
 
 .activeCard {
 	border-radius: 8px;
-	outline: 2px solid rgb(160, 160, 160);
+	outline: 3px solid rgb(160, 160, 160);
 }
 
 /* Extra small devices (phones, 600px and down) */
