@@ -17,3 +17,4 @@ A platform that I built for all the Studio Ghibli fans to view the movies and ch
 - [React](https://reactjs.org/)
 - [React Router (V6)](https://reactrouter.com/)
 - [Studio Ghibli API](https://ghibliapi.herokuapp.com/)
+- [Netlify](https://www.netlify.com/) for continuous deployment
