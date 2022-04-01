@@ -8,9 +8,9 @@ A platform that I built for all the Studio Ghibli fans to view the movies and ch
 
 ### Purpose:
 
-- Promote Studio Ghibli to gain more recognition from the audience.
-- Enable users to quickly find all films and characters made by Studio Ghibli and read plot summaries of films.
-- Accessible to different devices with a mobile-first responsive layout.
+- Promote Studio Ghibli to gain more recognition from the audience
+- Enable users to quickly find all films and characters made by Studio Ghibli and read plot summaries of films
+- Accessible to different devices with a mobile-first responsive layout
 
 ### Tools used:
 
